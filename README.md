@@ -28,3 +28,4 @@ Composer install
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # Laravel-Csv-File-Import
+İmport files with csv extension was done using Laravel Framework.
