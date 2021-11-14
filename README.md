@@ -23,7 +23,6 @@ Composer install
 - Ajax
 - Bootstrap
 - Toaster
-- Excel
 
 ## License
 
