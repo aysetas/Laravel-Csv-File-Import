@@ -13,7 +13,7 @@ Composer install
 - For generate database. <br>
 `php artisan migrate `
 
-## 5. Package Used
+## 3. Package Used
 
 - **[Maatwebsite/Excel ](https://docs.laravel-excel.com/3.1/getting-started/installation.html)**
 
