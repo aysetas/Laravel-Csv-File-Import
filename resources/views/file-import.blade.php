@@ -34,9 +34,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
-    //Dosya yüklemesinde ajax ile sayfa yenilenmeden işlemin başarılı, başarısız ve cıkabilecek validation hataların sonuclarını gösterir
+
    $(function (){
-       //toastr nasıl geleceğini belirler
+
        toastr.options = {
            "closeButton": true,
            "newestOnTop": true,
@@ -58,18 +58,18 @@
                    cache: false,
                    data: formData,
                    success: function (data) {
-                       //Dosya başarılı ve uzantısı csv ise burası çalışır
+
                        if(data.success == 1){
                            if(data.extension == 'csv'){
                                toastr.success(data.message);
                            }
                        }
-                       //Dosya boş ya da uzantısı csv değilse buraya atar
+
                        else{
                            toastr.error('Hatalı seçim yaptınız');
                        }
                    },
-                   //validationdan gelen hataları dönmesini saglar
+
                    error   : function ( jqXhr, json, errorThrown )
                    {
                        var errors = jqXhr.responseJSON;

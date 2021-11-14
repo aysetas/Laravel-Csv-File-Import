@@ -25,10 +25,10 @@ class UserController extends Controller
             'file' => 'required|mimes:csv,txt' //yalnız mimes.csv uzantısı boşluk olduğundan başarısız oluyor yanında txt kullandığında kabul ediyor.
         ]);
 
-        if ($validator->fails()) { //validationlar hatalı olduğunda
+        if ($validator->fails()) {
             //response
             $data['success'] = 0;
-            $data['error'] = $validator->errors()->first('file');// Hatalı response
+            $data['error'] = $validator->errors()->first('file');
 
         } else {
 
@@ -37,7 +37,7 @@ class UserController extends Controller
             Excel::import(new UserImport, $file); //import işlemi yapar
             // Response
             $data['success'] = 1;
-            $data['message'] = 'Dosyanız başarıyla yüklendi'; //Başarılı Response
+            $data['message'] = 'Dosyanız başarıyla yüklendi';
             $data['extension'] = $extension;
 
         }
