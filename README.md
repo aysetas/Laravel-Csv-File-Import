@@ -17,6 +17,13 @@ Composer install
 
 - **[Maatwebsite/Excel ](https://docs.laravel-excel.com/3.1/getting-started/installation.html)**
 
+## 4. Technologies Used
+
+- PHP Laravel Framework
+- Ajax
+- Bootstrap
+- Toaster
+- Excel
 
 ## License
 
