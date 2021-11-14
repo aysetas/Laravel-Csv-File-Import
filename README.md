@@ -26,6 +26,7 @@ Composer install
 
 ## 5. Example Used Excel File
 My sample excel file is customer.csv file in public folder
+`.Public/customer.csv `
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
