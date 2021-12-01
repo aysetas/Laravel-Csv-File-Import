@@ -10,22 +10,35 @@ Composer install
 ```
 - Copy `.env.example` to `.env` and change app url, app api url and database info.
 
+- `php artisan key:generate` for generate app key.
+
 - For generate database. <br>
 `php artisan migrate `
 
-## 3. Package Used
+## 3.Run The Project
+
+- To run in browser<br>
+`php artisan serve`
+
+- If the route
+`http://127.0.0.1:8000/file-import`
+
+## 4. Package Used
 
 - **[Maatwebsite/Excel ](https://docs.laravel-excel.com/3.1/getting-started/installation.html)**
 
-## 4. Technologies Used
+## 5. Technologies Used
 
 - PHP Laravel Framework
 - Ajax
 - Bootstrap
 - Toaster
 
+## 6. Example Used Excel File
+My sample excel file is customer.csv file in public folder
+`Public/customer.csv `
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # Laravel-Csv-File-Import
-İmport files with csv extension was done using Laravel Framework.
+Import files with csv extension was done using Laravel Framework.
